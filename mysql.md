@@ -9,15 +9,17 @@ apt-get install mysql-server
 ```
 vi /etc/mysql/my.cnf
 ```
->[client]
->default-character-set=utf8
+```
+[client]
+default-character-set=utf8
 
->[mysqld]
->default-storage-engine=MYISAM
->character-set-server=utf8
->collation-server=utf8_general_ci
+[mysqld]
+default-storage-engine=MYISAM
+character-set-server=utf8
+collation-server=utf8_general_ci
 
->bind-address            = 0.0.0.0
+bind-address            = 0.0.0.0
+```
 
 ## Create administrator
 mysql
