@@ -15,10 +15,9 @@ wget https://github.com/arut/nginx-rtmp-module/archive/master.zip
 
 ## Reference
 
-https://www.vultr.com/docs/setup-nginx-rtmp-on-ubuntu-14-04
-
-https://github.com/arut/nginx-rtmp-module/wiki/Directives
-https://github.com/arut/nginx-rtmp-module/wiki/Getting-started-with-nginx-rtmp
+- https://www.vultr.com/docs/setup-nginx-rtmp-on-ubuntu-14-04
+- https://github.com/arut/nginx-rtmp-module/wiki/Directives
+- https://github.com/arut/nginx-rtmp-module/wiki/Getting-started-with-nginx-rtmp
 
 ## Test
 
