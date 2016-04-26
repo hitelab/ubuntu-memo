@@ -10,7 +10,7 @@ vi /etc/hosts
 apt-get install nload
 ```
 
-## Port Redirection
+## Redirects TCP connections from one IP address and port to another
 ```
 apt-get install rinetd
 vi /etc/rinetd.conf
