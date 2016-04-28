@@ -4,7 +4,7 @@
 ```
 apt-get update
 apt-get install apache2 apache2-utils
-apt-get install php5 libapache2-mod-php5 php5-mysql php5-mcrypt
+apt-get install php5 libapache2-mod-php5 php5-mysql php5-curl php5-gd php5-mcrypt
 ```
 
 ## Could not reliably determine the server's fully qualified domain name
