@@ -1,6 +1,38 @@
-# Flight
-An extensible micro-framework for PHP
+# What is Flight?
+Flight is a fast, simple, extensible framework for PHP. Flight enables you to quickly and easily build RESTful web applications.
 
+```php
+require 'flight/Flight.php';
+
+Flight::route('/', function(){
+    echo 'hello world!';
+});
+
+Flight::start();
+```
+
+## Requirements
+Flight requires PHP 5.3 or greater.
+
+### Configure your webserver.
+
+For Apache, edit your .htaccess file with the following:
+```
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [QSA,L]
+```
+Note: If you need to use flight in a subdirectory add the line RewriteBase /subdir/ just after RewriteEngine On.
+
+For Nginx, add the following to your server declaration:
+```
+server {
+    location / {
+        try_files $uri $uri/ /index.php;
+    }
+}
+```
 ## Routing
 Routing in Flight is done by matching a URL pattern with a callback function.
 
